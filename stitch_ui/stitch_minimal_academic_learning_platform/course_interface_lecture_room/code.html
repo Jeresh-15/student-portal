@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error-container": "#ffdad6", "tertiary": "#000000", "on-background": "#0b1c30", "on-secondary-container": "#4e5d7e", "on-secondary-fixed-variant": "#374767", "surface-container": "#e5eeff", "secondary-fixed-dim": "#b6c6ed", "surface-container-lowest": "#ffffff", "secondary-fixed": "#d8e2ff", "surface-dim": "#cbdbf5", "on-error": "#ffffff", "primary-container": "#0d1c32", "on-primary-container": "#76849f", "on-primary-fixed": "#0d1c32", "tertiary-fixed": "#85f8c4", "surface-container-highest": "#d3e4fe", "background": "#f8f9ff", "on-primary-fixed-variant": "#39475f", "surface-bright": "#f8f9ff", "on-error-container": "#93000a", "tertiary-container": "#002114", "on-surface": "#0b1c30", "on-secondary": "#ffffff", "primary-fixed": "#d6e3ff", "secondary": "#4f5e80", "primary-fixed-dim": "#b9c7e4", "outline-variant": "#c5c6cd", "on-tertiary-container": "#069669", "surface-variant": "#d3e4fe", "on-tertiary-fixed-variant": "#005137", "secondary-container": "#c7d7fe", "on-surface-variant": "#44474d", "on-tertiary": "#ffffff", "surface-tint": "#515f78", "on-tertiary-fixed": "#002114", "outline": "#75777e", "primary": "#000000", "surface-container-high": "#dce9ff", "on-secondary-fixed": "#091b39", "surface": "#f8f9ff", "tertiary-fixed-dim": "#68dba9", "surface-container-low": "#eff4ff", "on-primary": "#ffffff", "inverse-on-surface": "#eaf1ff", "error": "#ba1a1a", "inverse-primary": "#b9c7e4", "inverse-surface": "#213145" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "margin": "3rem", "margin-mobile": "1.25rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-lg-mobile": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "body-md": [ "Geist" ], "headline-lg": [ "Space Grotesk" ], "body-lg": [ "Geist" ], "display": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ], "label-md": [ "Geist" ], "body-sm": [ "Geist" ], "label-sm": [ "Geist" ] }, "fontSize": { "headline-lg-mobile": [ "1.75rem", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-sm": [ "1.125rem", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.5", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-lg": [ "2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "display": [ "3.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "600" } ], "headline-md": [ "1.5rem", { "lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "label-md": [ "0.875rem", { "lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "500" } ], "body-sm": [ "0.8125rem", { "lineHeight": "1.45", "letterSpacing": "0em", "fontWeight": "400" } ], "label-sm": [ "0.6875rem", { "lineHeight": "1", "letterSpacing": "0.06em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-outline-variant z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-md border-b border-outline-variant flex items-center gap-space-sm"><img alt="Academia Brand Icon" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U46IYGyB_xiU1hiouWkUH2UQpVt-lqwojG6HXDH6TH28xG_Smxxb1x8-zxzQhELfgJHGUlyt0OkXWzV1sILDnSrSZUS4qBu5PQ_qm1Y_z1Qc2upsngSObttqMfviNXWY8QyeDnhowqErA-P5qNQ1Awq9upShAp__eBJgkdBSFovjp88T6hqxo34ERP4cCKuqmXBct_SdnAwELB5sUB3Zu496Oa-NzFmQBV2gbMGhTUL7k_-tHZCDJ6wVh9"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface leading-none">Aura</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Academia</span></div></div><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-semibold">Curriculum</span></div><nav class="flex flex-col px-space-xs gap-0.5" data-active-classes="bg-primary-container text-on-primary border-l-2 border-primary font-medium"><a class="flex items-center gap-space-sm px-space-sm py-2 text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-md text-label-md transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[1.125rem]">grid_view</span><span>Dashboard</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-primary-container text-on-primary border-l-2 border-primary font-medium" data-path="courses" href="#"><span class="material-symbols-outlined text-[1.125rem]">school</span><span>My Courses</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-md text-label-md transition-colors" data-path="materials" href="#"><span class="material-symbols-outlined text-[1.125rem]">menu_book</span><span>Study Materials</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-md text-label-md transition-colors" data-path="assignments" href="#"><span class="material-symbols-outlined text-[1.125rem]">assignment</span><span>Assignments</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-md text-label-md transition-colors" data-path="exams" href="#"><span class="material-symbols-outlined text-[1.125rem]">fact_check</span><span>Exams &amp; Quizzes</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-md text-label-md transition-colors" data-path="progress" href="#"><span class="material-symbols-outlined text-[1.125rem]">analytics</span><span>Progress Analytics</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-md text-label-md transition-colors" data-path="calendar" href="#"><span class="material-symbols-outlined text-[1.125rem]">calendar_today</span><span>Calendar</span></a></nav></div><div class="flex flex-col border-t border-outline-variant"><div class="px-space-md pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-semibold">System</span></div><nav class="flex flex-col px-space-xs pb-space-md gap-0.5" data-active-classes="bg-primary-container text-on-primary border-l-2 border-primary font-medium"><a class="flex items-center gap-space-sm px-space-sm py-2 text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-md text-label-md transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[1.125rem]">tune</span><span>Settings</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-md text-label-md transition-colors" data-path="support" href="#"><span class="material-symbols-outlined text-[1.125rem]">help_outline</span><span>Help &amp; Support</span></a></nav></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest border-b border-outline-variant z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-[1.125rem]">search</span><input class="w-full h-10 pl-9 pr-space-sm bg-surface text-on-surface border border-outline-variant text-body-sm font-body-sm focus:outline-none focus:border-on-surface transition-colors placeholder:text-on-surface-variant" placeholder="Search courses, lecture notes, assignments..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-1 border border-outline-variant bg-surface"><span class="w-2 h-2 bg-on-tertiary-container"></span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Fall Term 2024 · Week 8</span></div><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface transition-colors" type="button"><span class="material-symbols-outlined text-[1.25rem]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error"></span></button><div class="h-6 w-px bg-outline-variant"></div><div class="flex items-center gap-space-sm cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkMt73l8c7Eil4QlZKXGWPU-ajXclCmP0GsB9M5NRrTPSK2ZVe9izC3lT5uf1xbDqWFHiBViSJYbxiwkilOSMLu0aLgsYdRza6OJZNVn0Oj7isqjkQj5cCcQnQZnAdBrNWlKp0Ij2k9evpzU8V972uoqNoFFHAG6X3tj4T9X38sxxctaXIj4LjHA6M5VcS6JkR1HqEEeYdesiQhfOpGXnQu6ojhrw70H927cXtPww5OCqj7cdulTdMJw"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md font-medium text-on-surface leading-tight">Eleanor Vance</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">STU-9402</span></div><span class="material-symbols-outlined text-on-surface-variant text-[1rem]">unfold_more</span></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Course Header Meta Strip -->
+<section class="w-full bg-surface-container-lowest px-space-xl py-space-lg">
+<!-- Breadcrumb path -->
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-space-sm">
+<a class="hover:text-on-surface transition-colors" href="#">Courses</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-on-surface transition-colors" href="#">Computer Science</a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">CS-302</span>
+</div>
+<!-- Main Title & Academic Descriptor -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-lg">
+<div class="max-w-4xl">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="px-space-xs py-0.5 bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase tracking-wider">Undergraduate Core</span>
+<span class="px-space-xs py-0.5 bg-surface text-secondary font-label-sm text-label-sm tracking-wider">Accredited · Level IV</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-none mb-space-xs">
+          CS-302: Advanced Algorithms &amp; Complexity
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+          Rigorous exploration of graph theory, divide-and-conquer paradigms, greedy heuristics, dynamic programming, and NP-completeness proofs.
+        </p>
+</div>
+<!-- Action Card / Fast Resume CTA -->
+<div class="bg-surface p-space-md min-w-[320px] shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-on-surface">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Course Trajectory</span>
+<span class="font-label-md text-label-md font-semibold tabular-nums text-on-surface">68% Finished</span>
+</div>
+<!-- Technical Progress Indicator -->
+<div class="w-full bg-surface-container h-2 relative overflow-hidden">
+<div class="bg-primary-container h-full w-[68%] transition-all duration-300"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>17 / 25 Lessons Cleared</span>
+<span class="text-on-tertiary-container font-medium">8 Units Remaining</span>
+</div>
+<button class="w-full mt-space-xs py-2.5 px-space-md bg-primary-container hover:bg-on-background text-on-primary font-label-md text-label-md tracking-wider flex items-center justify-center gap-space-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">play_arrow</span>
+<span>CONTINUE LEARNING (LESSON 18)</span>
+</button>
+</div>
+</div>
+<!-- Instructor Bar & Metrics -->
+<div class="mt-space-lg pt-space-md flex flex-wrap items-center justify-between gap-space-md bg-surface-container-low px-space-md py-space-sm">
+<div class="flex flex-wrap items-center gap-x-space-lg gap-y-space-xs font-label-sm text-label-sm text-secondary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[1rem] text-on-surface">account_circle</span>
+<span class="text-on-surface font-medium">Prof. Alistair Chen, PhD (MIT)</span>
+</div>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<div>Department of Computer Science</div>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<div>4.0 Credit Units</div>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<div>Fall Term 2024</div>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<span class="w-2 h-2 bg-on-tertiary-container"></span>
+<span class="text-on-surface font-medium uppercase tracking-wider">Curriculum Active &amp; Verified</span>
+</div>
+</div>
+<!-- Architectural Tab Navigation -->
+<nav class="flex items-center gap-space-xs mt-space-lg overflow-x-auto">
+<button class="px-space-md py-2.5 font-label-md text-label-md uppercase tracking-wider bg-surface text-on-surface font-semibold shadow-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[1rem]">view_agenda</span>
+<span>Syllabus &amp; Modules</span>
+</button>
+<button class="px-space-md py-2.5 font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[1rem]">description</span>
+<span>Course Notes</span>
+</button>
+<button class="px-space-md py-2.5 font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[1rem]">task_alt</span>
+<span>Assignments</span>
+<span class="px-1.5 py-0.2 bg-secondary-container text-on-secondary-container font-label-sm text-[0.625rem] font-semibold">3</span>
+</button>
+<button class="px-space-md py-2.5 font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[1rem]">forum</span>
+<span>Discussion &amp; QA</span>
+</button>
+<button class="px-space-md py-2.5 font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[1rem]">inventory_2</span>
+<span>Course Resources</span>
+</button>
+</nav>
+</section>
+<!-- Workspace Shell: 65% / 35% Split Grid -->
+<div class="px-space-xl py-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Workspace & Primary Player (approx 65% = 8 cols) -->
+<section class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- 16:9 Academic Media Terminal -->
+<div class="bg-primary-container text-on-primary shadow-sm flex flex-col overflow-hidden">
+<!-- Terminal Title Ribbon -->
+<div class="px-space-md py-2 bg-on-background flex items-center justify-between text-on-primary-container font-label-sm text-label-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 bg-error"></span>
+<span class="tracking-wider uppercase text-on-primary font-medium">Stream Terminal · L-18</span>
+<span class="text-on-primary-container">|</span>
+<span class="truncate max-w-sm text-surface-container-high">Matrix Chain Multiplication &amp; Optimal Substructure</span>
+</div>
+<div class="flex items-center gap-space-sm tabular-nums">
+<span class="px-1.5 py-0.5 bg-surface/10 text-on-primary">1080p HD</span>
+<span>18:42 / 42:15</span>
+</div>
+</div>
+<!-- Video Surface Simulated Frame -->
+<div class="relative w-full aspect-video bg-primary flex items-center justify-center overflow-hidden">
+<!-- Diagram overlay in player -->
+<div class="absolute inset-0 p-space-lg flex flex-col justify-between opacity-80 pointer-events-none select-none">
+<div class="flex justify-between items-start">
+<div class="font-label-sm text-label-sm text-on-primary-container tracking-widest font-mono">
+                  M[i, j] = min_{i ≤ k &lt; j} { M[i,k] + M[k+1,j] + p_{i-1}p_k p_j }
+                </div>
+<div class="px-space-xs py-0.5 bg-on-background text-on-primary font-label-sm text-label-sm">
+                  REC-STEP: 4.2
+                </div>
+</div>
+<!-- Interactive Waveform/Visual Matrix Artifact (SVG) -->
+<div class="w-full flex items-center justify-center">
+<svg class="w-72 h-36 stroke-surface-variant/40 fill-none" viewbox="0 0 300 150">
+<path d="M 20 130 L 70 80 L 120 110 L 180 30 L 230 70 L 280 20" stroke-width="2"></path>
+<circle class="fill-tertiary-fixed stroke-on-background" cx="180" cy="30" r="4" stroke-width="2"></circle>
+<line stroke-dasharray="3,3" stroke-width="1.5" x1="180" x2="180" y1="30" y2="130"></line>
+<text class="fill-surface-variant font-label-sm text-[9px] font-mono" x="190" y="35">OPT-SPLIT k=3</text>
+<text class="fill-on-primary-container font-label-sm text-[9px] font-mono" x="25" y="145">A[1..2]</text>
+<text class="fill-tertiary-fixed font-label-sm text-[9px] font-mono" x="175" y="145">A[3]</text>
+<text class="fill-on-primary-container font-label-sm text-[9px] font-mono" x="260" y="145">A[4..n]</text>
+</svg>
+</div>
+<div class="font-label-sm text-label-sm text-on-primary-container/70 font-mono">
+                MEMO_TABLE: 8x8 ALLOCATED · CACHE HIT RATIO: 94.2%
+              </div>
+</div>
+<!-- Central Minimalist Control Overlay -->
+<button class="relative z-10 w-16 h-16 bg-surface text-primary flex items-center justify-center hover:bg-surface-container-high transition-colors shadow-md" id="playBtn">
+<span class="material-symbols-outlined text-[2.25rem]">play_arrow</span>
+</button>
+</div>
+<!-- Bottom Control Deck -->
+<div class="px-space-md py-space-sm bg-primary-container flex flex-col gap-space-xs">
+<!-- Scrubber Track -->
+<div class="w-full bg-surface-container-highest/20 h-1.5 cursor-pointer relative group">
+<div class="bg-tertiary-fixed h-full w-[44.3%] relative">
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-surface hidden group-hover:block"></div>
+</div>
+</div>
+<!-- Control Buttons Array -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-space-sm">
+<button class="p-1 hover:text-surface-container-high text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[1.25rem]">play_arrow</span>
+</button>
+<button class="p-1 hover:text-surface-container-high text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[1.25rem]">replay_10</span>
+</button>
+<button class="p-1 hover:text-surface-container-high text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[1.25rem]">forward_10</span>
+</button>
+<div class="flex items-center gap-space-xs ml-space-xs text-on-primary">
+<span class="material-symbols-outlined text-[1.25rem]">volume_up</span>
+<div class="w-16 h-1 bg-surface-container-highest/30">
+<div class="w-3/4 h-full bg-on-primary"></div>
+</div>
+</div>
+<span class="text-on-primary-container font-label-sm text-label-sm font-mono ml-space-sm">18:42 / 42:15</span>
+</div>
+<div class="flex items-center gap-space-md text-on-primary">
+<button class="px-2 py-0.5 bg-surface/10 hover:bg-surface/20 font-label-sm text-label-sm font-mono text-on-primary transition-colors">
+                  1.0x
+                </button>
+<button class="px-1.5 py-0.5 bg-surface/10 hover:bg-surface/20 font-label-sm text-label-sm text-on-primary font-semibold transition-colors">
+                  CC
+                </button>
+<button class="p-1 hover:text-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[1.25rem]">settings</span>
+</button>
+<button class="p-1 hover:text-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[1.25rem]">fullscreen</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Lecture Notes & Formalized Concepts (Academic rigor card) -->
+<article class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 bg-primary-container text-on-primary font-label-sm text-label-sm uppercase font-mono tracking-wider">Unit 4.3</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Matrix Chain Multiplication &amp; Optimal Substructure</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-mono">REF: CLRS CAP. 15.2</span>
+</div>
+<!-- Mathematical Formulation Panel -->
+<div class="bg-surface-container-low p-space-md">
+<h3 class="font-label-sm text-label-sm uppercase tracking-wider text-secondary mb-space-xs font-semibold">1. Principle of Optimality</h3>
+<p class="font-body-md text-body-md text-on-surface mb-space-sm">
+              Let a sequence of matrices ⟨A<sub>1</sub>, A<sub>2</sub>, ..., A<sub>n</sub>⟩ where matrix A<sub>i</sub> has dimensions p<sub>i-1</sub> × p<sub>i</sub>. An optimal parenthesization of the product A<sub>1</sub>A<sub>2</sub>...A<sub>n</sub> that splits at A<sub>k</sub> contains within it optimal parenthesizations of the subchains A<sub>1</sub>..A<sub>k</sub> and A<sub>k+1</sub>..A<sub>n</sub>.
+            </p>
+<div class="bg-surface-container-lowest p-space-sm font-mono text-body-sm text-on-surface shadow-sm">
+<div class="text-secondary mb-1 font-label-sm uppercase tracking-wider">// Recurrence Relation</div>
+<p class="text-on-surface font-semibold leading-relaxed">
+                m[i, j] = 0                                                      if i = j<br/>
+                m[i, j] = min<sub>i ≤ k &lt; j</sub> { m[i, k] + m[k+1, j] + p<sub>i-1</sub>p<sub>k</sub>p<sub>j</sub> }      if i &lt; j
+              </p>
+</div>
+</div>
+<!-- Clean Monospace Code Block -->
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-mono font-semibold">2. Memoized Implementation (Python 3.12)</span>
+<button class="text-primary hover:text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1 transition-colors" onclick="navigator.clipboard.writeText('def memoized_matrix_chain(p):\\n    n = len(p) - 1\\n    m = [[float(\'inf\')] * (n + 1) for _ in range(n + 1)]\\n    return lookup_chain(m, p, 1, n)')">
+<span class="material-symbols-outlined text-[0.875rem]">content_copy</span>
+<span>Copy Definition</span>
+</button>
+</div>
+<pre class="bg-primary-container text-surface-container p-space-md font-mono text-body-sm overflow-x-auto leading-normal selection:bg-tertiary-fixed selection:text-tertiary"><code><span class="text-on-primary-container"># Optimal Memoized Chain Evaluation with Split Tracking</span>
+<span class="text-tertiary-fixed">def</span> <span class="text-on-primary font-semibold">memoized_matrix_chain</span>(p: list[int]) -&gt; tuple[list[list[float]], list[list[int]]]:
+    n = len(p) - 1
+    m = [[<span class="text-tertiary-fixed">float</span>(<span class="text-surface-variant">'inf'</span>)] * (n + 1) <span class="text-tertiary-fixed">for</span> _ <span class="text-tertiary-fixed">in</span> range(n + 1)]
+    s = [[0] * (n + 1) <span class="text-tertiary-fixed">for</span> _ <span class="text-tertiary-fixed">in</span> range(n + 1)]
+    
+    <span class="text-tertiary-fixed">def</span> <span class="text-on-primary">lookup_chain</span>(i: int, j: int) -&gt; float:
+        <span class="text-tertiary-fixed">if</span> m[i][j] &lt; <span class="text-tertiary-fixed">float</span>(<span class="text-surface-variant">'inf'</span>):
+            <span class="text-tertiary-fixed">return</span> m[i][j]
+        <span class="text-tertiary-fixed">if</span> i == j:
+            m[i][j] = 0
+        <span class="text-tertiary-fixed">else</span>:
+            <span class="text-tertiary-fixed">for</span> k <span class="text-tertiary-fixed">in</span> range(i, j):
+                q = lookup_chain(i, k) + lookup_chain(k + 1, j) + p[i - 1] * p[k] * p[j]
+                <span class="text-tertiary-fixed">if</span> q &lt; m[i][j]:
+                    m[i][j] = q
+                    s[i][j] = k
+        <span class="text-tertiary-fixed">return</span> m[i][j]
+
+    lookup_chain(1, n)
+    <span class="text-tertiary-fixed">return</span> m, s</code></pre>
+</div>
+<!-- Downloadable Materials Row -->
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold block mb-space-xs">Course Handouts &amp; Code Attachments</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<a class="p-space-sm bg-surface hover:bg-surface-container-low transition-colors flex items-center gap-space-sm group" href="#">
+<span class="material-symbols-outlined text-secondary group-hover:text-on-surface text-[1.5rem]">picture_as_pdf</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Lecture-18-Slides.pdf</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">4.2 MB · Vector Slides</span>
+</div>
+</a>
+<a class="p-space-sm bg-surface hover:bg-surface-container-low transition-colors flex items-center gap-space-sm group" href="#">
+<span class="material-symbols-outlined text-secondary group-hover:text-on-surface text-[1.5rem]">article</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">DP-Problem-Set-Annotated.pdf</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">1.8 MB · 12 Exercises</span>
+</div>
+</a>
+<a class="p-space-sm bg-surface hover:bg-surface-container-low transition-colors flex items-center gap-space-sm group" href="#">
+<span class="material-symbols-outlined text-secondary group-hover:text-on-surface text-[1.5rem]">code</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Python-Reference-Code.py</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">14 KB · Test Harness</span>
+</div>
+</a>
+</div>
+</div>
+</article>
+<!-- Student Timestamped Interactive Note Slate -->
+<section class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-surface text-[1.25rem]">edit_note</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Personal Study Notes</h3>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-tertiary-container font-mono">
+<span class="w-2 h-2 bg-on-tertiary-container"></span>
+<span id="saveStatus">AUTO-SAVED (18:42 LOCAL)</span>
+</div>
+</div>
+<div class="bg-surface p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs">
+<button class="px-2 py-0.5 bg-surface-container-high text-on-surface font-mono text-[0.75rem] hover:bg-primary-container hover:text-on-primary transition-colors">
+                  + PIN TIMESTAMP [18:42]
+                </button>
+<span>Add inline lecture anchor</span>
+</div>
+<span class="font-mono text-[0.75rem]">Markdown formatting active</span>
+</div>
+<textarea class="w-full bg-surface-container-lowest p-space-sm text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-on-surface placeholder:text-on-surface-variant font-mono" id="studyNotes" placeholder="Synthesize observations here... e.g., 'At 18:42, note why subproblem overlap is exponential in pure recursion without cache table.'" rows="5">[18:42] Crucial insight from Prof. Chen: The subproblem graph for Matrix-Chain Multiplication forms a directed acyclic graph (DAG) where node (i, j) has out-edges to (i, k) and (k+1, j) for all valid splits k. 
+
+Total distinct subproblems: O(n^2).
+Time per subproblem: O(j - i) = O(n).
+Overall runtime complexity strictly resolves to O(n^3).</textarea>
+</div>
+</section>
+</section>
+<!-- RIGHT COLUMN: Curriculum Architecture & Syllabus Navigation (approx 35% = 4 cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Module Progress Filter & Metric Header -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Syllabus Directory</span>
+<span class="font-label-sm text-label-sm font-mono text-on-surface font-semibold">25 UNITS TOTAL</span>
+</div>
+<!-- Filter Pills -->
+<div class="grid grid-cols-3 gap-space-xs text-center font-label-sm text-label-sm">
+<button class="py-1 bg-primary-container text-on-primary font-medium">All (25)</button>
+<button class="py-1 bg-surface hover:bg-surface-container-low text-secondary font-medium transition-colors">Done (17)</button>
+<button class="py-1 bg-surface hover:bg-surface-container-low text-secondary font-medium transition-colors">Next (8)</button>
+</div>
+</div>
+<!-- Module Accordion Tree -->
+<div class="flex flex-col gap-space-sm">
+<!-- MODULE 1: COMPLETED -->
+<details class="group bg-surface-container-lowest shadow-sm">
+<summary class="p-space-md flex items-center justify-between cursor-pointer list-none select-none hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-[1.25rem]">check_circle</span>
+<div>
+<div class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-mono">Module 01</div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Foundational Graph Algorithms</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">4/4</span>
+<span class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform">expand_more</span>
+</div>
+</summary>
+<div class="px-space-md pb-space-md pt-space-xs bg-surface-container-low flex flex-col gap-1 text-body-sm font-body-sm">
+<div class="flex items-center justify-between py-1 text-secondary">
+<span class="truncate">01. DFS, BFS &amp; Topological Sorting</span>
+<span class="font-mono text-label-sm">34m</span>
+</div>
+<div class="flex items-center justify-between py-1 text-secondary">
+<span class="truncate">02. Strongly Connected Components (Tarjan)</span>
+<span class="font-mono text-label-sm">52m</span>
+</div>
+<div class="flex items-center justify-between py-1 text-secondary">
+<span class="truncate">03. Minimum Spanning Trees (Kruskal/Prim)</span>
+<span class="font-mono text-label-sm">48m</span>
+</div>
+<div class="flex items-center justify-between py-1 text-secondary">
+<span class="truncate">04. Disjoint Set Union with Path Compression</span>
+<span class="font-mono text-label-sm">41m</span>
+</div>
+</div>
+</details>
+<!-- MODULE 2: COMPLETED -->
+<details class="group bg-surface-container-lowest shadow-sm">
+<summary class="p-space-md flex items-center justify-between cursor-pointer list-none select-none hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-[1.25rem]">check_circle</span>
+<div>
+<div class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-mono">Module 02</div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Greedy Strategies &amp; Matroids</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">5/5</span>
+<span class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform">expand_more</span>
+</div>
+</summary>
+<div class="px-space-md pb-space-md pt-space-xs bg-surface-container-low flex flex-col gap-1 text-body-sm font-body-sm text-secondary">
+<div class="flex items-center justify-between py-1"><span>05. Interval Scheduling &amp; Partitioning</span><span class="font-mono text-label-sm">39m</span></div>
+<div class="flex items-center justify-between py-1"><span>06. Huffman Coding &amp; Entropy Bounds</span><span class="font-mono text-label-sm">45m</span></div>
+<div class="flex items-center justify-between py-1"><span>07. Matroid Theory &amp; Independent Systems</span><span class="font-mono text-label-sm">50m</span></div>
+<div class="flex items-center justify-between py-1"><span>08. Exchange Arguments &amp; Proof Techniques</span><span class="font-mono text-label-sm">42m</span></div>
+<div class="flex items-center justify-between py-1"><span>09. Problem Set 2 Review</span><span class="font-mono text-label-sm">31m</span></div>
+</div>
+</details>
+<!-- MODULE 3: COMPLETED -->
+<details class="group bg-surface-container-lowest shadow-sm">
+<summary class="p-space-md flex items-center justify-between cursor-pointer list-none select-none hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-[1.25rem]">check_circle</span>
+<div>
+<div class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-mono">Module 03</div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Divide &amp; Conquer &amp; FFT</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">4/4</span>
+<span class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform">expand_more</span>
+</div>
+</summary>
+<div class="px-space-md pb-space-md pt-space-xs bg-surface-container-low flex flex-col gap-1 text-body-sm font-body-sm text-secondary">
+<div class="flex items-center justify-between py-1"><span>10. Master Theorem &amp; Akra-Bazzi</span><span class="font-mono text-label-sm">45m</span></div>
+<div class="flex items-center justify-between py-1"><span>11. Strassen’s Sub-cubic Matrix Multiplication</span><span class="font-mono text-label-sm">40m</span></div>
+<div class="flex items-center justify-between py-1"><span>12. Discrete Fourier Transform &amp; Roots of Unity</span><span class="font-mono text-label-sm">56m</span></div>
+<div class="flex items-center justify-between py-1"><span>13. Cooley-Tukey FFT O(n log n)</span><span class="font-mono text-label-sm">48m</span></div>
+</div>
+</details>
+<!-- MODULE 4: ACTIVE / ONGOING (EXPANDED BY DEFAULT) -->
+<div class="bg-surface-container-lowest shadow-md overflow-hidden">
+<!-- Ongoing Header Indicator -->
+<div class="p-space-md bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-background text-[1.25rem]">timelapse</span>
+<div>
+<div class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-mono font-semibold">Module 04 · Active Track</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">Dynamic Programming</div>
+</div>
+</div>
+<span class="px-2 py-0.5 bg-primary-container text-on-primary font-label-sm text-label-sm font-mono uppercase tracking-wider">
+                4 / 6 Cleared
+              </span>
+</div>
+<!-- Lessons Hierarchy -->
+<div class="flex flex-col">
+<!-- Lesson 16 -->
+<div class="p-space-sm px-space-md bg-surface-container-lowest hover:bg-surface-container-low flex items-center justify-between transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-on-tertiary-container text-[1.125rem]">check_circle</span>
+<span class="text-body-sm font-body-sm text-secondary truncate">16. Introduction to Memoization &amp; DAGs</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono text-label-sm text-secondary shrink-0">
+<span>38m</span>
+<span class="px-1 py-0.2 bg-surface text-on-tertiary-container text-[0.625rem] font-semibold">DONE</span>
+</div>
+</div>
+<!-- Lesson 17 -->
+<div class="p-space-sm px-space-md bg-surface-container-lowest hover:bg-surface-container-low flex items-center justify-between transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-on-tertiary-container text-[1.125rem]">check_circle</span>
+<span class="text-body-sm font-body-sm text-secondary truncate">17. Longest Common Subsequence (LCS)</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono text-label-sm text-secondary shrink-0">
+<span>45m</span>
+<span class="px-1 py-0.2 bg-surface text-on-tertiary-container text-[0.625rem] font-semibold">DONE</span>
+</div>
+</div>
+<!-- Lesson 18 (ACTIVE CURRENT) -->
+<div class="p-space-sm px-space-md bg-primary-container text-on-primary flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-tertiary-fixed text-[1.125rem]">play_circle</span>
+<div class="flex flex-col min-w-0">
+<span class="text-body-sm font-body-sm font-semibold truncate text-on-primary">18. Matrix Chain Multiplication</span>
+<span class="font-label-sm text-[0.6875rem] text-tertiary-fixed uppercase tracking-wider font-mono">Currently Playing · 18:42</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs font-mono text-label-sm text-surface-container-high shrink-0">
+<span>42m</span>
+<span class="px-1.5 py-0.5 bg-surface text-primary font-bold text-[0.625rem]">ACTIVE</span>
+</div>
+</div>
+<!-- Lesson 19 -->
+<div class="p-space-sm px-space-md bg-surface-container-lowest hover:bg-surface-container-low flex items-center justify-between transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary text-[1.125rem]">radio_button_unchecked</span>
+<span class="text-body-sm font-body-sm text-on-surface truncate">19. Bellman-Ford Shortest Paths</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono text-label-sm text-secondary shrink-0">
+<span>50m</span>
+<span class="px-1 py-0.2 bg-surface-container text-secondary text-[0.625rem]">QUEUED</span>
+</div>
+</div>
+<!-- Lesson 20 -->
+<div class="p-space-sm px-space-md bg-surface-container-lowest hover:bg-surface-container-low flex items-center justify-between transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary text-[1.125rem]">radio_button_unchecked</span>
+<span class="text-body-sm font-body-sm text-on-surface truncate">20. Floyd-Warshall &amp; Transitive Closure</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono text-label-sm text-secondary shrink-0">
+<span>45m</span>
+<span class="px-1 py-0.2 bg-surface-container text-secondary text-[0.625rem]">QUEUED</span>
+</div>
+</div>
+<!-- Module Quiz & Problem Set -->
+<div class="p-space-sm px-space-md bg-surface flex items-center justify-between text-secondary">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary text-[1.125rem]">lock</span>
+<span class="text-body-sm font-body-sm truncate">Module 4 Quiz &amp; Problem Set 4</span>
+</div>
+<span class="font-label-sm text-[0.625rem] tracking-wider uppercase font-mono px-1 py-0.5 bg-surface-container text-secondary">
+                  LOCKED TILL L-20
+                </span>
+</div>
+</div>
+</div>
+<!-- MODULE 5: UPCOMING -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm flex items-center justify-between opacity-80">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[1.25rem]">lock_clock</span>
+<div>
+<div class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-mono">Module 05 · Upcoming</div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">NP-Completeness &amp; Reductions</div>
+</div>
+</div>
+<span class="px-1.5 py-0.5 bg-surface-container text-secondary font-label-sm text-label-sm font-mono">6 UNITS</span>
+</div>
+</div>
+<!-- Academic Advisor Quick Connect Banner -->
+<div class="bg-surface-container p-space-md flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-secondary-container font-semibold">T.A. Office Hours</span>
+<span class="font-label-sm text-label-sm font-mono text-on-tertiary-container font-medium">LIVE NOW</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-secondary-container">
+            Teaching Assistant Marcus Vance is in Engineering Hall #304 or on Virtual Desk queue.
+          </p>
+<button class="mt-space-xs py-2 bg-on-background hover:bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wider transition-colors">
+            Enter Office Hour Queue
+          </button>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<script>
+  // Simple functional reactive micro-interactions for student notes
+  (function() {
+    const notesArea = document.getElementById('studyNotes');
+    const statusText = document.getElementById('saveStatus');
+    const playBtn = document.getElementById('playBtn');
+
+    if (notesArea && statusText) {
+      let timeout = null;
+      notesArea.addEventListener('input', function() {
+        statusText.innerText = 'SYNCING EDITS...';
+        statusText.classList.remove('text-on-tertiary-container');
+        statusText.classList.add('text-secondary');
+
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+          const now = new Date();
+          const timeStr = now.getHours().toString().padStart(2, '0') + ':' + now.getMinutes().toString().padStart(2, '0') + ':' + now.getSeconds().toString().padStart(2, '0');
+          statusText.innerText = 'AUTO-SAVED (' + timeStr + ' LOCAL)';
+          statusText.classList.remove('text-secondary');
+          statusText.classList.add('text-on-tertiary-container');
+        }, 800);
+      });
+    }
+
+    if (playBtn) {
+      let isPlaying = false;
+      playBtn.addEventListener('click', function() {
+        isPlaying = !isPlaying;
+        const icon = playBtn.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.innerText = isPlaying ? 'pause' : 'play_arrow';
+        }
+      });
+    }
+  })();
+</script></main></div></body></html>

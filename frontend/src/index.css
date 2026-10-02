@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11", "tnum";
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+
+  * {
+    border-color: #e2e8f0;
+  }
+}
+
+/* Material Symbols Outlined Icon helper */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+/* Custom precision scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #eff4ff;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5c6cd;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #75777e;
+}
