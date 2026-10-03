@@ -18,6 +18,7 @@ import { StudentSubjectsPage } from './modules/student/pages/StudentSubjectsPage
 import { StudentClassInchargePage } from './modules/student/pages/StudentClassInchargePage';
 import { StudentAcademicYearsPage } from './modules/student/pages/StudentAcademicYearsPage';
 import { StudentSemestersPage } from './modules/student/pages/StudentSemestersPage';
+import { StudentAttendancePage } from './modules/student/pages/StudentAttendancePage';
 
 const ProtectedStudentRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const token = localStorage.getItem('student_token') || localStorage.getItem('lms_token');
@@ -62,6 +63,14 @@ export function App() {
             element={
               <ProtectedStudentRoute>
                 <StudentDashboard />
+              </ProtectedStudentRoute>
+            }
+          />
+          <Route
+            path="/student/attendance"
+            element={
+              <ProtectedStudentRoute>
+                <StudentAttendancePage />
               </ProtectedStudentRoute>
             }
           />

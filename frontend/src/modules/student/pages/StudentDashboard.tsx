@@ -331,6 +331,35 @@ export const StudentDashboard: React.FC = () => {
               </div>
             </div>
           </div>
+
+          {/* Quick Attendance Metric Widget */}
+          <div className="bg-white border border-slate-200 rounded-lg p-5 shadow-xs flex flex-col gap-3">
+            <div className="flex items-center justify-between pb-2 border-b border-slate-100">
+              <span className="text-xs font-bold text-slate-800 uppercase tracking-wider">
+                My Attendance Summary
+              </span>
+              <span className="px-2 py-0.5 bg-emerald-50 text-emerald-700 text-[10px] font-bold rounded">
+                6 / 6 Today
+              </span>
+            </div>
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="text-2xl font-extrabold text-slate-900 font-mono">92.8%</div>
+                <div className="text-[11px] text-emerald-600 font-medium flex items-center gap-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  <span>Exam Eligible (Min 75%)</span>
+                </div>
+              </div>
+              <button
+                onClick={() => navigate('/student/attendance')}
+                className="px-3 py-1.5 bg-[#0b1727] hover:bg-[#13243c] text-white text-xs font-semibold rounded transition-colors inline-flex items-center gap-1"
+                type="button"
+              >
+                <span>6 Periods Log</span>
+                <span className="material-symbols-outlined text-[0.95rem]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
