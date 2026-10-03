@@ -32,10 +32,10 @@ export const StudentLayout: React.FC<StudentLayoutProps> = ({ children }) => {
   const navLinks = [
     { to: '/student', label: 'Dashboard', icon: 'grid_view' },
     { to: '/student/class', label: 'My Class', icon: 'meeting_room' },
-    { to: '/student/attendance', label: 'My Attendance', icon: 'fact_check' },
     { to: '/student/batch', label: 'My Batch', icon: 'group' },
     { to: '/student/program', label: 'My Program', icon: 'school' },
     { to: '/student/department', label: 'My Department', icon: 'domain' },
+    { to: '/student/attendance', label: 'My Attendance', icon: 'fact_check' },
     { to: '/student/subjects', label: 'My Subjects', icon: 'auto_stories' },
     { to: '/student/class-incharge', label: 'Class Incharge', icon: 'supervisor_account' },
     { to: '/student/academic-calendar', label: 'Academic Calendar', icon: 'calendar_today' },
