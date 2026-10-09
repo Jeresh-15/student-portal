@@ -5,10 +5,16 @@ import prisma from '../../config/database';
 import { StudentContext } from './student.types';
 import { AppError } from '../../utils/errors';
 import { uploadMemory } from '../../middleware/upload.middleware';
+import { validate } from '../../middleware/validation.middleware';
+import {
+  studentAiController,
+  studentAiRoutes,
+  studentChatRequestSchema,
+} from './ai';
 
 const router = Router();
 
-async function buildStudentContext(req: any, res: any, next: any) {
+export async function buildStudentContext(req: any, res: any, next: any) {
   try {
     const firebaseUid = req.firebaseUid || req.user?.firebaseUid || req.user?.id;
     if (!firebaseUid) throw new AppError(401, 'UNAUTHORIZED', 'No user found');
@@ -93,5 +99,16 @@ router.get('/attendance', (req, res, next) => studentController.getAttendance(re
 // 13. Assignments API
 router.get('/assignments', (req, res, next) => studentController.getAssignments(req, res, next));
 router.post('/assignments/:assignmentId/submit', uploadMemory.single('file'), (req, res, next) => studentController.submitAssignment(req, res, next));
+
+// 14. Student AI Chatbot APIs
+// Main preferred route: POST /api/student/chat
+router.post(
+  '/chat',
+  validate(studentChatRequestSchema),
+  (req, res, next) => studentAiController.chat(req, res, next),
+);
+
+// Sub-router for /api/student/ai/* (chat, tools, tools/execute)
+router.use('/ai', studentAiRoutes);
 
 export default router;
