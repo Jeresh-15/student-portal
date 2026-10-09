@@ -4,4 +4,5 @@ export * from './toolRegistry';
 export * from './studentAi.service';
 export * from './studentAi.controller';
 export * from './studentDataToolService';
+export * from './studentRagService';
 export { default as studentAiRoutes } from './studentAi.routes';
