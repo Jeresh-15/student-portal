@@ -13,6 +13,8 @@ import type {
   ApiResponse,
   ClassTimetableSlot,
   StudentAttendanceResponse,
+  StudentChatRequest,
+  StudentChatResponse,
 } from '../types/student.types';
 import { auth } from '../../../config/firebase';
 
@@ -140,4 +142,11 @@ export const studentApi = {
       body: formData,
     });
   },
+
+  // 15. Student AI Assistant
+  chat: (data: StudentChatRequest) =>
+    request<StudentChatResponse>('/student/chat', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    }),
 };

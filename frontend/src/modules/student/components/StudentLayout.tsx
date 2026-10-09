@@ -36,6 +36,7 @@ export const StudentLayout: React.FC = () => {
     { to: '/student/assignments', label: 'Assignments', icon: 'assignment' },
     { to: '/student/class-incharge', label: 'Class Incharge', icon: 'supervisor_account' },
     { to: '/student/academic-calendar', label: 'Academic Calendar', icon: 'calendar_today' },
+    { to: '/student/ai-chat', label: 'AI Assistant', icon: 'smart_toy' },
   ];
 
   const studentInitials =

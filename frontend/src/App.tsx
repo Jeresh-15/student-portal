@@ -69,6 +69,7 @@ import { StudentAcademicYearsPage } from './modules/student/pages/StudentAcademi
 import { StudentSemestersPage } from './modules/student/pages/StudentSemestersPage';
 import { StudentAttendancePage } from './modules/student/pages/StudentAttendancePage';
 import { StudentTimetablePage } from './modules/student/pages/StudentTimetablePage';
+import { StudentChatPage } from './modules/student/pages/StudentChatPage';
 
 function App() {
   useEffect(() => {
@@ -155,6 +156,8 @@ function App() {
               <Route path="academic-calendar" element={<StudentAcademicYearsPage />} />
               <Route path="academic-years" element={<StudentAcademicYearsPage />} />
               <Route path="semesters" element={<StudentSemestersPage />} />
+              <Route path="ai-chat" element={<StudentChatPage />} />
+              <Route path="chat" element={<StudentChatPage />} />
             </Route>
           </Routes>
         </Suspense>

@@ -212,3 +212,5 @@ export interface StudentAttendanceResponse {
   dailySchedule: StudentDayAttendance[];
 }
 
+export * from './studentChat.types';
+
